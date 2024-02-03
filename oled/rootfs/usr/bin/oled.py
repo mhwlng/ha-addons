@@ -63,7 +63,7 @@ interface = globals()[DISPLAY_INTERFACE_SERIAL](port=DISPLAY_INTERFACE_SERIAL_PO
 device = globals()[DISPLAY_TYPE](interface, rotate=DISPLAY_ROTATE)
 device.contrast(50)
 
-fnt = ImageFont.truetype("/usr/bin/SF-Compact.ttf", 10)
+fnt = ImageFont.truetype("/usr/bin/SF-Compact.ttf", 11)
 
 # Draw some text
 with canvas(device) as draw:
