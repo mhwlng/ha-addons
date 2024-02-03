@@ -5,7 +5,7 @@ import paho.mqtt.client as mqtt
 from luma.core.interface.serial import i2c, spi, pcf8574
 from luma.core.interface.parallel import bitbang_6800
 from luma.core.render import canvas
-from luma.oled.device import ssd1306, ssd1309, ssd1325, ssd1331, sh1106, ws0010
+from luma.oled.device import ssd1306, ssd1309, ssd1322, ssd1325, ssd1327, ssd1331, ssd1351, ssd1362, sh1106, sh1107, ws0010
 from PIL import ImageFont
 
 # Add command line arguments for setting config
