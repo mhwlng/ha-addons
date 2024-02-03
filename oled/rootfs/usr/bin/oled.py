@@ -70,7 +70,7 @@ device.contrast(50)
 #fnt = ImageFont.truetype("/usr/bin/miscfs_.ttf", 14)
 #fnt = ImageFont.truetype("/usr/bin/fontawesome-webfont.ttf", 14)
 #fnt = ImageFont.truetype("/usr/bin/Volter__28Goldfish_29.ttf", 14)
-#fnt = ImageFont.truetype("/usr/bin/ProggyTiny.ttf", 14)
+fnt = ImageFont.truetype("/usr/bin/ProggyTiny.ttf", 14)
 #fnt = ImageFont.truetype("/usr/bin/FreePixel.ttf", 14)
 #fnt = ImageFont.truetype("/usr/bin/DejaVuSansMono.ttf", 14)
 
