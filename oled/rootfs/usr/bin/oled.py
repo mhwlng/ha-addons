@@ -64,8 +64,9 @@ device = globals()[DISPLAY_TYPE](interface, rotate=DISPLAY_ROTATE)
 device.contrast(50)
 
 #fnt = ImageFont.truetype("/usr/bin/SF-Compact.ttf", 12)
+#fnt = ImageFont.truetype("/usr/bin/DejaVuSans.ttf", 13)
 
-fnt = ImageFont.truetype("/usr/bin/FreeSans.ttf", 13)
+fnt = ImageFont.truetype("/usr/bin/FreeSans.ttf", 14)
 
 # Draw some text
 with canvas(device) as draw:
