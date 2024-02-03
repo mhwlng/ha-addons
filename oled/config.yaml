@@ -29,7 +29,7 @@ options:
   display_interface_port: 1
   display_interface_address: 60
   display_type: sh1106
-  display_rotate: "2"
+  display_rotate: "0"
 schema: 
   message: str
   display_interface_serial: list(i2c)
