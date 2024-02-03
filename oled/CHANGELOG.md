@@ -2,4 +2,8 @@
 
 ## 0.0.1
 
-- Initial release
+- Initial release from : <https://github.com/Wolkar10/ha-addons> <https://github.com/wildekek/ha-addons>
+
+## 0.0.2
+
+- Initial test
