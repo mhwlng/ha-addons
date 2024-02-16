@@ -32,6 +32,7 @@ options:
   display_rotate: "0"
   display_width: 128
   display_height: 64
+  font_height: 16
 schema: 
   message: str
   display_interface_serial: list(i2c)
@@ -41,4 +42,5 @@ schema:
   display_rotate: list(0|1|2|3)
   display_width: int
   display_height: int
+  font_height: int
 #image: "ghcr.io/home-assistant/{arch}-addon-example"
