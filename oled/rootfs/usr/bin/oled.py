@@ -18,6 +18,7 @@ parser.add_argument("--display_type")
 parser.add_argument("--display_rotate", type=int)
 parser.add_argument("--display_width", type=int)
 parser.add_argument("--display_height", type=int)
+parser.add_argument("--display_brightness", type=int)
 parser.add_argument("--font_height", type=int)
 parser.add_argument("--font_name")
 parser.add_argument("--display_interface_serial")
@@ -33,6 +34,7 @@ DISPLAY_TYPE: Final = args.display_type
 DISPLAY_ROTATE: Final = args.display_rotate
 DISPLAY_WIDTH: Final = args.display_width
 DISPLAY_HEIGHT: Final = args.display_height
+DISPLAY_BRIGHTNESS: Final = args.display_brightness
 FONT_HEIGHT: Final = args.font_height
 FONT_NAME: Final = args.font_name
 DISPLAY_INTERFACE_SERIAL: Final = args.display_interface_serial
@@ -70,7 +72,7 @@ interface = globals()[DISPLAY_INTERFACE_SERIAL](port=DISPLAY_INTERFACE_SERIAL_PO
 # Create the display device
 device = globals()[DISPLAY_TYPE](interface, rotate=DISPLAY_ROTATE, width=DISPLAY_WIDTH, height=DISPLAY_HEIGHT)
 
-device.contrast(50)
+device.contrast(DISPLAY_BRIGHTNESS)
 
 #fnt = ImageFont.truetype("/usr/bin/SF-Compact.ttf", 12)
 #fnt = ImageFont.truetype("/usr/bin/DejaVuSans.ttf", 13)
