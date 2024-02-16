@@ -53,7 +53,7 @@ def on_message(client, userdata, msg):
 
 
 
-client = mqtt.Client(mqtt_client.CallbackAPIVersion.VERSION1)
+client = mqtt.Client()
 client.on_connect = on_connect
 client.on_message = on_message
 client.username_pw_set(username=MQTT_USER, password=MQTT_PASSWORD)
