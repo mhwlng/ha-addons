@@ -29,7 +29,7 @@ RUN \
 RUN \
   pip3 install \
   wheel \
-  paho-mqtt \
+  paho-mqtt<2.0.0 \
   luma.oled
 
 # Python 3 HTTP Server serves the current working dir
