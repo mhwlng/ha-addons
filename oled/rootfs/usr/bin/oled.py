@@ -66,7 +66,7 @@ interface = globals()[DISPLAY_INTERFACE_SERIAL](port=DISPLAY_INTERFACE_SERIAL_PO
 # Create the display device
 device = globals()[DISPLAY_TYPE](interface, rotate=DISPLAY_ROTATE)
 
-device.capabilities(DISPLAY_WIDTH, DISPLAY_HEIGHT, DISPLAY_ROTATE)
+device.capabilities(128, 32, DISPLAY_ROTATE)
 
 device.contrast(50)
 
