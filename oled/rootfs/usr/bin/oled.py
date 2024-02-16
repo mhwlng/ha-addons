@@ -16,6 +16,8 @@ parser.add_argument("--mqtt_password")
 parser.add_argument("--message")
 parser.add_argument("--display_type")
 parser.add_argument("--display_rotate", type=int)
+parser.add_argument("--display_width", type=int)
+parser.add_argument("--display_height", type=int)
 parser.add_argument("--display_interface_serial")
 parser.add_argument("--display_interface_port", type=int)
 parser.add_argument("--display_interface_address", type=int)
@@ -27,6 +29,8 @@ MQTT_USER: Final = args.mqtt_user
 MQTT_PASSWORD: Final = args.mqtt_password
 DISPLAY_TYPE: Final = args.display_type
 DISPLAY_ROTATE: Final = args.display_rotate
+DISPLAY_WIDTH: Final = args.display_width
+DISPLAY_HEIGHT: Final = args.display_height
 DISPLAY_INTERFACE_SERIAL: Final = args.display_interface_serial
 DISPLAY_INTERFACE_SERIAL_PORT: Final = args.display_interface_port
 DISPLAY_INTERFACE_SERIAL_ADDRESS: Final = args.display_interface_address #0x3C
@@ -58,7 +62,7 @@ client.connect(MQTT_HOST, 1883, 60)
 
 
 # Create the interface the device is connected to. Currently i2c support only.
-interface = globals()[DISPLAY_INTERFACE_SERIAL](port=DISPLAY_INTERFACE_SERIAL_PORT, address=DISPLAY_INTERFACE_SERIAL_ADDRESS)
+interface = globals()[DISPLAY_INTERFACE_SERIAL](port=DISPLAY_INTERFACE_SERIAL_PORT, address=DISPLAY_INTERFACE_SERIAL_ADDRESS, width=DISPLAY_WIDTH, height=DISPLAY_HEIGHT)
 # Create the display device
 device = globals()[DISPLAY_TYPE](interface, rotate=DISPLAY_ROTATE)
 device.contrast(50)
