@@ -66,8 +66,6 @@ interface = globals()[DISPLAY_INTERFACE_SERIAL](port=DISPLAY_INTERFACE_SERIAL_PO
 # Create the display device
 device = globals()[DISPLAY_TYPE](interface, rotate=DISPLAY_ROTATE)
 
-device.capabilities(128, 32, DISPLAY_ROTATE)
-
 device.contrast(50)
 
 #fnt = ImageFont.truetype("/usr/bin/SF-Compact.ttf", 12)
@@ -83,7 +81,9 @@ fnt = ImageFont.truetype("/usr/bin/FreePixel.ttf", 16)
 
 # Draw some text
 with canvas(device) as draw:
-    draw.rectangle(device.bounding_box, outline="white", fill="black")
+    #draw.rectangle(device.bounding_box, outline="white", fill="black")
+
+    draw.rectangle((0,0,DISPLAY_WIDTH-1,DISPLAY_HEIGHT-1), outline="white", fill="black")
     draw.text((1, 1), args.message, font=fnt, fill="white")
 
 client.loop_forever()
