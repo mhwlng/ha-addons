@@ -18,6 +18,8 @@ parser.add_argument("--display_type")
 parser.add_argument("--display_rotate", type=int)
 parser.add_argument("--display_width", type=int)
 parser.add_argument("--display_height", type=int)
+parser.add_argument("--font_height", type=int)
+parser.add_argument("--font_name")
 parser.add_argument("--display_interface_serial")
 parser.add_argument("--display_interface_port", type=int)
 parser.add_argument("--display_interface_address", type=int)
@@ -31,6 +33,8 @@ DISPLAY_TYPE: Final = args.display_type
 DISPLAY_ROTATE: Final = args.display_rotate
 DISPLAY_WIDTH: Final = args.display_width
 DISPLAY_HEIGHT: Final = args.display_height
+FONT_HEIGHT: Final = args.font_height
+FONT_NAME: Final = args.font_name
 DISPLAY_INTERFACE_SERIAL: Final = args.display_interface_serial
 DISPLAY_INTERFACE_SERIAL_PORT: Final = args.display_interface_port
 DISPLAY_INTERFACE_SERIAL_ADDRESS: Final = args.display_interface_address #0x3C
@@ -76,8 +80,10 @@ device.contrast(50)
 #fnt = ImageFont.truetype("/usr/bin/fontawesome-webfont.ttf", 14)
 #fnt = ImageFont.truetype("/usr/bin/Volter__28Goldfish_29.ttf", 14)
 #fnt = ImageFont.truetype("/usr/bin/ProggyTiny.ttf", 16)
-fnt = ImageFont.truetype("/usr/bin/FreePixel.ttf", 16)
+#fnt = ImageFont.truetype("/usr/bin/FreePixel.ttf", 16)
 #fnt = ImageFont.truetype("/usr/bin/DejaVuSansMono.ttf", 14)
+
+fnt = ImageFont.truetype("/usr/bin/" + cstr(FONT_NAME), FONT_HEIGHT)
 
 # Draw some text
 with canvas(device) as draw:
