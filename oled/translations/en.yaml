@@ -23,4 +23,10 @@ configuration:
   display_height:
     name: Height
     description: Height
+  font_height:
+    name: Font Height
+    description: Font height
+  font_name:
+    name: Font Name
+    description: Font Name
     
