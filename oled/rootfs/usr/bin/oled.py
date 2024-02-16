@@ -65,7 +65,8 @@ client.connect(MQTT_HOST, 1883, 60)
 interface = globals()[DISPLAY_INTERFACE_SERIAL](port=DISPLAY_INTERFACE_SERIAL_PORT, address=DISPLAY_INTERFACE_SERIAL_ADDRESS)
 # Create the display device
 device = globals()[DISPLAY_TYPE](interface, rotate=DISPLAY_ROTATE)
-self.capabilities(DISPLAY_WIDTH, DISPLAY_HEIGHT, DISPLAY_ROTATE)
+
+device.capabilities(DISPLAY_WIDTH, DISPLAY_HEIGHT, DISPLAY_ROTATE)
 
 device.contrast(50)
 
