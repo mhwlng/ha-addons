@@ -11,3 +11,7 @@
 ## 0.0.3
 
  - Add Width + Height test
+
+# 0.0.4
+
+ - fix mqtt client (test)
