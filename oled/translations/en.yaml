@@ -5,6 +5,9 @@ configuration:
   display_interface_serial:
     name: Serial interface
     description: Which interface does the device use?
+  display_interface_port:
+    name: Port
+    description: Which port does the device use?
   display_interface_address:
     name: Serial address
     description: Which address does the device use?
