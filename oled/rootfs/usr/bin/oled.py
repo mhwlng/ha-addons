@@ -83,7 +83,7 @@ device.contrast(50)
 #fnt = ImageFont.truetype("/usr/bin/FreePixel.ttf", 16)
 #fnt = ImageFont.truetype("/usr/bin/DejaVuSansMono.ttf", 14)
 
-fnt = ImageFont.truetype("/usr/bin/" + cstr(FONT_NAME) + ".ttf", FONT_HEIGHT)
+fnt = ImageFont.truetype("/usr/bin/" + str(FONT_NAME) + ".ttf", FONT_HEIGHT)
 
 # Draw some text
 with canvas(device) as draw:
