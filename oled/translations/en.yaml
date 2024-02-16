@@ -14,3 +14,10 @@ configuration:
   display_rotate:
     name: Rotation
     description: "Rotate the display. 0 is no rotation, 1 is rotate 90° clockwise, 2 is 180° rotation and 3 represents 270° rotation."
+  display_width:
+    name: Width
+    description: "Width."
+  display_height:
+    name: Height
+    description: "Height."
+    
