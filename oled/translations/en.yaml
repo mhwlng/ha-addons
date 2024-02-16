@@ -23,6 +23,9 @@ configuration:
   display_height:
     name: Height
     description: Height
+  display_brightness:
+    name: Brightness
+    description: Brightness
   font_height:
     name: Font Height
     description: Font height
