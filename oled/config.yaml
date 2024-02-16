@@ -44,5 +44,5 @@ schema:
   display_width: int
   display_height: int
   font_height: int
-  font_name: list(FreePixel|FreeSans|SF-Compact|DejaVuSans|DejaVuSansMono||DejaVuSans-Bold|pixelmix|miscfs_|fontawesome-webfont|Volter__28Goldfish_29|ProggyTiny)
+  font_name: list(FreePixel|FreeSans|SF-Compact|DejaVuSans|DejaVuSansMono|DejaVuSans-Bold|pixelmix|miscfs_|fontawesome-webfont|Volter__28Goldfish_29|ProggyTiny)
 #image: "ghcr.io/home-assistant/{arch}-addon-example"
