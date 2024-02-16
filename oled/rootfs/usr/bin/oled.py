@@ -64,14 +64,9 @@ client.connect(MQTT_HOST, 1883, 60)
 # Create the interface the device is connected to. Currently i2c support only.
 interface = globals()[DISPLAY_INTERFACE_SERIAL](port=DISPLAY_INTERFACE_SERIAL_PORT, address=DISPLAY_INTERFACE_SERIAL_ADDRESS)
 # Create the display device
-device = globals()[DISPLAY_TYPE](interface, rotate=DISPLAY_ROTATE, width=128, height=32)
+device = globals()[DISPLAY_TYPE](interface, rotate=DISPLAY_ROTATE, width=DISPLAY_WIDTH, height=DISPLAY_HEIGHT)
 
 device.contrast(50)
-
-print("width "+str(DISPLAY_WIDTH))
-print("height "+str(DISPLAY_HEIGHT))
-print("width "+str(args.display_width))
-print("height "+str(args.display_height))
 
 #fnt = ImageFont.truetype("/usr/bin/SF-Compact.ttf", 12)
 #fnt = ImageFont.truetype("/usr/bin/DejaVuSans.ttf", 13)
@@ -86,9 +81,7 @@ fnt = ImageFont.truetype("/usr/bin/FreePixel.ttf", 16)
 
 # Draw some text
 with canvas(device) as draw:
-    #draw.rectangle(device.bounding_box, outline="white", fill="black")
-
-    draw.rectangle((0,0,128,32), outline="white", fill="black")
+    draw.rectangle(device.bounding_box, outline="white", fill="black")
     draw.text((1, 1), args.message, font=fnt, fill="white")
 
 client.loop_forever()
