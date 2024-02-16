@@ -7,3 +7,7 @@
 ## 0.0.2
 
 - Initial test
+
+## 0.0.3
+
+ - Add Width + Height test
