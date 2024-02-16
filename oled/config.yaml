@@ -1,6 +1,6 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
 name: OLED add-on
-version: "0.0.18"
+version: "0.0.19"
 slug: oled
 description: Use OLED screens via i2c
 url: "https://github.com/mhwlng/ha-addons/tree/main/oled"
@@ -32,6 +32,7 @@ options:
   display_rotate: "0"
   display_width: 128
   display_height: 64
+  display_brightness: 50
   font_height: 16
   font_name: FreePixel
 schema: 
@@ -43,6 +44,7 @@ schema:
   display_rotate: list(0|1|2|3)
   display_width: int
   display_height: int
+  display_brightness: int
   font_height: int
   font_name: list(FreePixel|FreeSans|SF-Compact|DejaVuSans|DejaVuSansMono|DejaVuSans-Bold|pixelmix|miscfs_|fontawesome-webfont|Volter__28Goldfish_29|ProggyTiny)
 #image: "ghcr.io/home-assistant/{arch}-addon-example"
