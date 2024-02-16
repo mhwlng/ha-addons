@@ -16,6 +16,7 @@ display_type=$(bashio::config 'display_type')
 display_rotate=$(bashio::config 'display_rotate')
 display_height=$(bashio::config 'display_height')
 display_width=$(bashio::config 'display_width')
+display_brightness=$(bashio::config 'display_brightness')
 font_height=$(bashio::config 'font_height')
 font_name=$(bashio::config 'font_name')
 display_interface_serial=$(bashio::config 'display_interface_serial')
@@ -27,4 +28,4 @@ bashio::log.info "Displaying: ${message}"
 
 ## Run your program
 #exec /usr/bin/my_program
-python3 /usr/bin/oled.py --mqtt_host="${mqtt_host}" --mqtt_user="${mqtt_user}" --mqtt_password="${mqtt_password}" --message="${message}" --display_type="${display_type}" --display_rotate="${display_rotate}" --display_height="${display_height}" --display_width="${display_width}" --font_height="${font_height}" --font_name="${font_name}" --display_interface_serial="${display_interface_serial}" --display_interface_port="${display_interface_port}" --display_interface_address="${display_interface_address}"
+python3 /usr/bin/oled.py --mqtt_host="${mqtt_host}" --mqtt_user="${mqtt_user}" --mqtt_password="${mqtt_password}" --message="${message}" --display_type="${display_type}" --display_rotate="${display_rotate}" --display_height="${display_height}" --display_width="${display_width}" --display_brightness="${display_brightness}" --font_height="${font_height}" --font_name="${font_name}" --display_interface_serial="${display_interface_serial}" --display_interface_port="${display_interface_port}" --display_interface_address="${display_interface_address}"
