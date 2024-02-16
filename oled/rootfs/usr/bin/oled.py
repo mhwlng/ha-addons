@@ -62,9 +62,9 @@ client.connect(MQTT_HOST, 1883, 60)
 
 
 # Create the interface the device is connected to. Currently i2c support only.
-interface = globals()[DISPLAY_INTERFACE_SERIAL](port=DISPLAY_INTERFACE_SERIAL_PORT, address=DISPLAY_INTERFACE_SERIAL_ADDRESS, width=DISPLAY_WIDTH, height=DISPLAY_HEIGHT)
+interface = globals()[DISPLAY_INTERFACE_SERIAL](port=DISPLAY_INTERFACE_SERIAL_PORT, address=DISPLAY_INTERFACE_SERIAL_ADDRESS)
 # Create the display device
-device = globals()[DISPLAY_TYPE](interface, rotate=DISPLAY_ROTATE)
+device = globals()[DISPLAY_TYPE](interface, rotate=DISPLAY_ROTATE, width=DISPLAY_WIDTH, height=DISPLAY_HEIGHT)
 device.contrast(50)
 
 #fnt = ImageFont.truetype("/usr/bin/SF-Compact.ttf", 12)
