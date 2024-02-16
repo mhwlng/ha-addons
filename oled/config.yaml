@@ -30,8 +30,8 @@ options:
   display_interface_address: 60
   display_type: sh1106
   display_rotate: "0"
-  display_width: "128"
-  display_height: "64"
+  display_width: 128
+  display_height: 64
 schema: 
   message: str
   display_interface_serial: list(i2c)
@@ -39,6 +39,6 @@ schema:
   display_interface_address: int
   display_type: list(ssd1306|ssd1309|ssd1322|ssd1325|ssd1327|ssd1331|ssd1351|ssd1362|sh1106|sh1107|ws0010)
   display_rotate: list(0|1|2|3)
-  display_width: list(128)
-  display_height: list(128|64|32)
+  display_width: int
+  display_height: int
 #image: "ghcr.io/home-assistant/{arch}-addon-example"
