@@ -39,7 +39,7 @@ options:
   font_name: FreePixel
 schema: 
   message: str
-  display_interface_serial: list(i2c,spi)
+  display_interface_serial: list(i2c|spi)
   display_interface_port: int
   display_interface_address: int
   display_type: list(ssd1306|ssd1309|ssd1322|ssd1325|ssd1327|ssd1331|ssd1351|ssd1362|sh1106|sh1107|ws0010)
