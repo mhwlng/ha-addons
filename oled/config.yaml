@@ -1,8 +1,8 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
 name: OLED add-on
-version: "0.0.23"
+version: "0.0.24"
 slug: oled
-description: Use OLED screens via i2c or spi
+description: Use OLED screens via i2c
 url: "https://github.com/mhwlng/ha-addons/tree/main/oled"
 stage: experimental
 arch:
@@ -40,7 +40,7 @@ options:
   font_name: FreePixel
 schema: 
   message: str
-  display_interface_serial: list(i2c|spi)
+  display_interface_serial: list(i2c)
   display_interface_port: int
   display_interface_address: int
   display_type: list(ssd1306|ssd1309|ssd1322|ssd1325|ssd1327|ssd1331|ssd1351|ssd1362|sh1106|sh1107|ws0010)
