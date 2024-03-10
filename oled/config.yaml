@@ -22,8 +22,6 @@ devices:
   - /dev/i2c-1
   - /dev/i2c-10
   - /dev/i2c-22
-  - /dev/spidev0.0
-  - /dev/spidev0.1  
 map:
   - config:rw
 options:
