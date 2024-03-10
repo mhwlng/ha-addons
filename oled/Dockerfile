@@ -18,7 +18,6 @@ RUN \
     python3-dev \
     py3-pip \
     py3-pillow \
-    py3-rpigpio \
     libjpeg-turbo-dev \
     zlib-dev \
     freetype-dev \
