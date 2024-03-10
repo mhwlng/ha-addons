@@ -16,7 +16,6 @@ services:
 init: false
 apparmor: false
 full_access: true
-gpio: true
 devices:
   - /dev/i2c-0
   - /dev/i2c-1
